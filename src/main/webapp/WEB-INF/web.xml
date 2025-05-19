@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app PUBLIC
+ "-//Jakarta EE//DTD Web Application 5.0//EN"
+ "https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd">
+
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         version="5.0"
+         metadata-complete="true">
+
+  <display-name>UniqueWebApp - Custom Deployment Descriptor</display-name>
+
+  <description>
+    A uniquely customized web application descriptor generated for modern Jakarta EE environments.
+  </description>
+
+</web-app>
+
