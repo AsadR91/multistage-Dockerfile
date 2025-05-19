@@ -14,25 +14,32 @@ This project illustrates how to use Docker's multi-stage build feature to contai
 
 1. **Build the Docker Image**:
 
-   ```
-   docker build -t java-webapp .
-   ```
-
-
-
-2. **Run the Docker Container**:
+   Clone the repo and run the following commands.
 
    ```
-   docker run -p 8080:8080 java-webapp
+   cd multistage-Dockerfile
+
+   ```
+   **Build the Single-Stage Image and Multi-Stage Image.
+   
+   ```
+   docker build -t single-stage -f Dockerfile-ubuntu .
+   ```
+   **Build the Multi-Stage Image
+   ```
+   docker build -t multi-stage -f Dockerfile . 
    ```
 
 
+3. **Run the Docker Container**:
 
+   ```
+   docker run -d -p 8080:8080 multi-stage
+   ```
+   ```
+   docker ps
+   ```
 Access the application at [http://localhost:8080](http://localhost:8080).
-
-## 🚀 Deployment
-
-The included `Procfile` facilitates deployment to platforms like Heroku. Ensure that the platform supports Docker-based deployments and configure the necessary environment variables.
 
 ## 📄 License
 
